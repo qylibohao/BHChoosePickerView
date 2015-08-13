@@ -1,12 +1,12 @@
 
-#import "CMFanPickerFlowLayout.h"
+#import "BHFanPickerFlowLayout.h"
 
 CGFloat PickerFlowLayoutItemSize = 65;
 CGFloat PickerFlowLayoutActiveDistance = 65;
 CGFloat PickerFlowLayoutZoomFactor = 0.8;
 
 
-@implementation CMFanPickerFlowLayout
+@implementation BHFanPickerFlowLayout
 
 + (instancetype)PickerFlowLayout {
     return [[self alloc] init];

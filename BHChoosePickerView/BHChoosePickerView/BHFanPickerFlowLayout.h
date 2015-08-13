@@ -1,6 +1,5 @@
 //
-//  CMFanPickerFlowLayout
-//  Chimian
+//  BHFanPickerFlowLayout
 //
 //  Created by libohao on 15/6/24.
 //
@@ -8,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CMFanPickerFlowLayout : UICollectionViewFlowLayout
+@interface BHFanPickerFlowLayout : UICollectionViewFlowLayout
 
 + (instancetype)PickerFlowLayout;
 

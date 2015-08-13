@@ -1,21 +1,20 @@
 //
-//  CMFanPickerCollectionView.m
-//  Chimian
+//  BHFanPickerCollectionView
 //
 //  Created by libohao on 15/8/5.
 //
 //
 
-#import "CMFanPickerCollectionView.h"
+#import "BHFanPickerCollectionView.h"
 
-@interface CMFanPickerCollectionView()<UIScrollViewDelegate>
+@interface BHFanPickerCollectionView()<UIScrollViewDelegate>
 
 @property (nonatomic, copy) void (^BackGroundTouchBlock)();
 
 
 @end
 
-@implementation CMFanPickerCollectionView
+@implementation BHFanPickerCollectionView
 
 - (instancetype)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout *)layout {
     self = [super initWithFrame:frame collectionViewLayout:layout];

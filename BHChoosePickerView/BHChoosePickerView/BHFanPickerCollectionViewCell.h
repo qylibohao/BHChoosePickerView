@@ -8,16 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol CMFanPickerCollectionViewCellDelegate <NSObject>
+@protocol BHFanPickerCollectionViewCellDelegate <NSObject>
 
 - (void)CellDidPan:(UIPanGestureRecognizer*) recognizer;
 
 @end
 
-@interface CMFanPickerCollectionViewCell : UICollectionViewCell
+@interface BHFanPickerCollectionViewCell : UICollectionViewCell
 
 
-@property (nonatomic, assign) id<CMFanPickerCollectionViewCellDelegate> delegate;
+@property (nonatomic, assign) id<BHFanPickerCollectionViewCellDelegate> delegate;
 
 @property (nonatomic, assign) BOOL panEnable;
 

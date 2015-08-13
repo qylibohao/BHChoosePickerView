@@ -1,12 +1,12 @@
 
-#import "CMFanPickerCollectionViewCell.h"
+#import "BHFanPickerCollectionViewCell.h"
 
-@interface CMFanPickerCollectionViewCell()
+@interface BHFanPickerCollectionViewCell()
 
 
 @end
 
-@implementation CMFanPickerCollectionViewCell
+@implementation BHFanPickerCollectionViewCell
 
 - (id)initWithFrame:(CGRect)frame
 {

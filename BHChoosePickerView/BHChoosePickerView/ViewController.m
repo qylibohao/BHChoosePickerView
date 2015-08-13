@@ -7,16 +7,16 @@
 //
 
 #import "ViewController.h"
-#import "CMFanPickerCollectionView.h"
-#import "CMFanPickerFlowLayout.h"
-#import "CMFanPickerCollectionViewCell.h"
+#import "BHFanPickerCollectionView.h"
+#import "BHFanPickerFlowLayout.h"
+#import "BHFanPickerCollectionViewCell.h"
 
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 NSString *CollectionViewCellReuseIdentifier = @"CollectionViewCellReuseIdentifier";
 
 
-@interface ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,CMFanPickerCollectionViewCellDelegate>
+@interface ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,BHFanPickerCollectionViewCellDelegate>
 {
     BOOL dragEnable;
 }
@@ -25,8 +25,8 @@ NSString *CollectionViewCellReuseIdentifier = @"CollectionViewCellReuseIdentifie
 
 @property (nonatomic, strong) UIImageView* dragMaskView;
 
-@property (nonatomic, strong) CMFanPickerCollectionView *selectionCollectionView;
-@property (nonatomic, strong) CMFanPickerFlowLayout* defaultLayout;
+@property (nonatomic, strong) BHFanPickerCollectionView *selectionCollectionView;
+@property (nonatomic, strong) BHFanPickerFlowLayout* defaultLayout;
 
 @end
 
@@ -69,7 +69,7 @@ NSString *CollectionViewCellReuseIdentifier = @"CollectionViewCellReuseIdentifie
 
 - (UICollectionView* )selectionCollectionView {
     if (!_selectionCollectionView) {
-        _selectionCollectionView = [[CMFanPickerCollectionView alloc]initWithFrame:CGRectMake(0, SCREEN_HEIGHT - 210, SCREEN_WIDTH, 160) collectionViewLayout:[CMFanPickerFlowLayout PickerFlowLayout]];
+        _selectionCollectionView = [[BHFanPickerCollectionView alloc]initWithFrame:CGRectMake(0, SCREEN_HEIGHT - 210, SCREEN_WIDTH, 160) collectionViewLayout:[BHFanPickerFlowLayout PickerFlowLayout]];
         _selectionCollectionView.backgroundColor = [UIColor clearColor];
         [_selectionCollectionView setCollectionViewLayout:self.defaultLayout];
         [_selectionCollectionView setShowsHorizontalScrollIndicator:NO];
@@ -77,14 +77,14 @@ NSString *CollectionViewCellReuseIdentifier = @"CollectionViewCellReuseIdentifie
         [_selectionCollectionView setContentInset:UIEdgeInsetsMake(0, SCREEN_WIDTH/2 - wid/2 , 0, SCREEN_WIDTH/2 - wid/2)];
         _selectionCollectionView.delegate = self;
         _selectionCollectionView.dataSource = self;
-        [_selectionCollectionView registerClass:[CMFanPickerCollectionViewCell class] forCellWithReuseIdentifier:CollectionViewCellReuseIdentifier];
+        [_selectionCollectionView registerClass:[BHFanPickerCollectionViewCell class] forCellWithReuseIdentifier:CollectionViewCellReuseIdentifier];
     }
     return _selectionCollectionView;
 }
 
-- (CMFanPickerFlowLayout* )defaultLayout {
+- (BHFanPickerFlowLayout* )defaultLayout {
     if (!_defaultLayout) {
-        _defaultLayout = [CMFanPickerFlowLayout PickerFlowLayout];
+        _defaultLayout = [BHFanPickerFlowLayout PickerFlowLayout];
     }
     return _defaultLayout;
 }
@@ -117,7 +117,7 @@ NSString *CollectionViewCellReuseIdentifier = @"CollectionViewCellReuseIdentifie
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    CMFanPickerCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CollectionViewCellReuseIdentifier forIndexPath:indexPath];
+    BHFanPickerCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CollectionViewCellReuseIdentifier forIndexPath:indexPath];
     cell.delegate = self;
     NSString* imgName = [NSString stringWithFormat:@"%ld",indexPath.row];
     cell.imageView.image = [UIImage imageNamed:imgName];
@@ -142,8 +142,8 @@ NSString *CollectionViewCellReuseIdentifier = @"CollectionViewCellReuseIdentifie
 
 - (void)configMidCellPanEnable {
     CGFloat scale = 1.0;
-    CMFanPickerCollectionViewCell* midCell;
-    for (CMFanPickerCollectionViewCell *cell in self.selectionCollectionView.visibleCells) {
+    BHFanPickerCollectionViewCell* midCell;
+    for (BHFanPickerCollectionViewCell *cell in self.selectionCollectionView.visibleCells) {
         cell.panEnable = NO;
         CATransform3D transform =  cell.layer.transform;
         if (transform.m11 > scale) {
