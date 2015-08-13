@@ -12,8 +12,15 @@
 		CE3AC4A01B7C3AE100F0918C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3AC49F1B7C3AE100F0918C /* ViewController.m */; };
 		CE3AC4A31B7C3AE100F0918C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3AC4A11B7C3AE100F0918C /* Main.storyboard */; };
 		CE3AC4A51B7C3AE100F0918C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3AC4A41B7C3AE100F0918C /* Images.xcassets */; };
-		CE3AC4A81B7C3AE100F0918C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE3AC4A61B7C3AE100F0918C /* LaunchScreen.xib */; };
 		CE3AC4B41B7C3AE100F0918C /* BHChoosePickerViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3AC4B31B7C3AE100F0918C /* BHChoosePickerViewTests.m */; };
+		CE3AC57C1B7C859400F0918C /* BHFanPickerCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3AC5771B7C859400F0918C /* BHFanPickerCollectionView.m */; };
+		CE3AC57D1B7C859400F0918C /* BHFanPickerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3AC5791B7C859400F0918C /* BHFanPickerCollectionViewCell.m */; };
+		CE3AC57E1B7C859400F0918C /* BHFanPickerFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3AC57B1B7C859400F0918C /* BHFanPickerFlowLayout.m */; };
+		CE3AC5851B7C85AB00F0918C /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = CE3AC5801B7C85AB00F0918C /* 0.png */; };
+		CE3AC5861B7C85AB00F0918C /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE3AC5811B7C85AB00F0918C /* 1.png */; };
+		CE3AC5871B7C85AB00F0918C /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = CE3AC5821B7C85AB00F0918C /* 2.png */; };
+		CE3AC5881B7C85AB00F0918C /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = CE3AC5831B7C85AB00F0918C /* 3.png */; };
+		CE3AC5891B7C85AB00F0918C /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = CE3AC5841B7C85AB00F0918C /* 4.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +43,20 @@
 		CE3AC49F1B7C3AE100F0918C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CE3AC4A21B7C3AE100F0918C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE3AC4A41B7C3AE100F0918C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		CE3AC4A71B7C3AE100F0918C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CE3AC4AD1B7C3AE100F0918C /* BHChoosePickerViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BHChoosePickerViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3AC4B21B7C3AE100F0918C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE3AC4B31B7C3AE100F0918C /* BHChoosePickerViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BHChoosePickerViewTests.m; sourceTree = "<group>"; };
+		CE3AC5761B7C859400F0918C /* BHFanPickerCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHFanPickerCollectionView.h; sourceTree = "<group>"; };
+		CE3AC5771B7C859400F0918C /* BHFanPickerCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHFanPickerCollectionView.m; sourceTree = "<group>"; };
+		CE3AC5781B7C859400F0918C /* BHFanPickerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHFanPickerCollectionViewCell.h; sourceTree = "<group>"; };
+		CE3AC5791B7C859400F0918C /* BHFanPickerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHFanPickerCollectionViewCell.m; sourceTree = "<group>"; };
+		CE3AC57A1B7C859400F0918C /* BHFanPickerFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHFanPickerFlowLayout.h; sourceTree = "<group>"; };
+		CE3AC57B1B7C859400F0918C /* BHFanPickerFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHFanPickerFlowLayout.m; sourceTree = "<group>"; };
+		CE3AC5801B7C85AB00F0918C /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
+		CE3AC5811B7C85AB00F0918C /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		CE3AC5821B7C85AB00F0918C /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		CE3AC5831B7C85AB00F0918C /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		CE3AC5841B7C85AB00F0918C /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +98,14 @@
 		CE3AC4961B7C3AE100F0918C /* BHChoosePickerView */ = {
 			isa = PBXGroup;
 			children = (
+				CE3AC57F1B7C85AB00F0918C /* resources */,
+				CE3AC5751B7C859400F0918C /* PickerView */,
 				CE3AC49B1B7C3AE100F0918C /* AppDelegate.h */,
 				CE3AC49C1B7C3AE100F0918C /* AppDelegate.m */,
 				CE3AC49E1B7C3AE100F0918C /* ViewController.h */,
 				CE3AC49F1B7C3AE100F0918C /* ViewController.m */,
 				CE3AC4A11B7C3AE100F0918C /* Main.storyboard */,
 				CE3AC4A41B7C3AE100F0918C /* Images.xcassets */,
-				CE3AC4A61B7C3AE100F0918C /* LaunchScreen.xib */,
 				CE3AC4971B7C3AE100F0918C /* Supporting Files */,
 			);
 			path = BHChoosePickerView;
@@ -117,6 +135,31 @@
 				CE3AC4B21B7C3AE100F0918C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE3AC5751B7C859400F0918C /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				CE3AC5761B7C859400F0918C /* BHFanPickerCollectionView.h */,
+				CE3AC5771B7C859400F0918C /* BHFanPickerCollectionView.m */,
+				CE3AC5781B7C859400F0918C /* BHFanPickerCollectionViewCell.h */,
+				CE3AC5791B7C859400F0918C /* BHFanPickerCollectionViewCell.m */,
+				CE3AC57A1B7C859400F0918C /* BHFanPickerFlowLayout.h */,
+				CE3AC57B1B7C859400F0918C /* BHFanPickerFlowLayout.m */,
+			);
+			path = PickerView;
+			sourceTree = "<group>";
+		};
+		CE3AC57F1B7C85AB00F0918C /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE3AC5801B7C85AB00F0918C /* 0.png */,
+				CE3AC5811B7C85AB00F0918C /* 1.png */,
+				CE3AC5821B7C85AB00F0918C /* 2.png */,
+				CE3AC5831B7C85AB00F0918C /* 3.png */,
+				CE3AC5841B7C85AB00F0918C /* 4.png */,
+			);
+			path = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +242,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE3AC5851B7C85AB00F0918C /* 0.png in Resources */,
+				CE3AC5891B7C85AB00F0918C /* 4.png in Resources */,
+				CE3AC5861B7C85AB00F0918C /* 1.png in Resources */,
+				CE3AC5871B7C85AB00F0918C /* 2.png in Resources */,
+				CE3AC5881B7C85AB00F0918C /* 3.png in Resources */,
 				CE3AC4A31B7C3AE100F0918C /* Main.storyboard in Resources */,
-				CE3AC4A81B7C3AE100F0918C /* LaunchScreen.xib in Resources */,
 				CE3AC4A51B7C3AE100F0918C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,8 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE3AC57D1B7C859400F0918C /* BHFanPickerCollectionViewCell.m in Sources */,
 				CE3AC4A01B7C3AE100F0918C /* ViewController.m in Sources */,
 				CE3AC49D1B7C3AE100F0918C /* AppDelegate.m in Sources */,
+				CE3AC57E1B7C859400F0918C /* BHFanPickerFlowLayout.m in Sources */,
+				CE3AC57C1B7C859400F0918C /* BHFanPickerCollectionView.m in Sources */,
 				CE3AC49A1B7C3AE100F0918C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,14 +300,6 @@
 				CE3AC4A21B7C3AE100F0918C /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CE3AC4A61B7C3AE100F0918C /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE3AC4A71B7C3AE100F0918C /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -412,6 +454,7 @@
 				CE3AC4B91B7C3AE100F0918C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE3AC4BA1B7C3AE100F0918C /* Build configuration list for PBXNativeTarget "BHChoosePickerViewTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +463,7 @@
 				CE3AC4BC1B7C3AE100F0918C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
