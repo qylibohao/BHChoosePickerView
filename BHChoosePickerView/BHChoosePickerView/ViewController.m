@@ -21,6 +21,8 @@ NSString *CollectionViewCellReuseIdentifier = @"CollectionViewCellReuseIdentifie
     BOOL dragEnable;
 }
 @property (nonatomic, strong) UIImageView* cirCleBackGroundView;
+@property (nonatomic, strong) UIImageView* matchAvatarView;
+
 @property (nonatomic, strong) UIImageView* dragMaskView;
 
 @property (nonatomic, strong) CMFanPickerCollectionView *selectionCollectionView;
@@ -31,6 +33,16 @@ NSString *CollectionViewCellReuseIdentifier = @"CollectionViewCellReuseIdentifie
 @implementation ViewController
 
 #pragma markt - Property
+
+- (UIImageView* )matchAvatarView {
+    if (!_matchAvatarView) {
+        _matchAvatarView = [[UIImageView alloc]initWithFrame:CGRectMake(5, 30, SCREEN_WIDTH - 10,SCREEN_WIDTH - 10)];
+        _matchAvatarView.layer.cornerRadius = CGRectGetWidth(_matchAvatarView.frame)/2;
+        _matchAvatarView.layer.masksToBounds = YES;
+        //_matchAvatarView.backgroundColor = [[UIColor yellowColor]colorWithAlphaComponent:0.3];
+    }
+    return _matchAvatarView;
+}
 
 - (UIImageView* )dragMaskView {
     if (!_dragMaskView) {
@@ -83,6 +95,7 @@ NSString *CollectionViewCellReuseIdentifier = @"CollectionViewCellReuseIdentifie
     [super viewDidLoad];
     self.edgesForExtendedLayout = UIRectEdgeNone;
     [self.view addSubview:self.cirCleBackGroundView];
+    [self.view addSubview:self.matchAvatarView];
     [self.view addSubview:self.selectionCollectionView];
     [self.view addSubview:self.dragMaskView];
 }
@@ -166,8 +179,11 @@ NSString *CollectionViewCellReuseIdentifier = @"CollectionViewCellReuseIdentifie
         self.dragMaskView.hidden = YES;
         if ( [self distanceFromPointX:self.dragMaskView.center distanceToPointY:self.cirCleBackGroundView.center] < CGRectGetWidth(self.cirCleBackGroundView.frame)/2) {
             
-             self.cirCleBackGroundView.image = self.dragMaskView.image;
-            
+             self.matchAvatarView.image = self.dragMaskView.image;
+            self.matchAvatarView.transform = CGAffineTransformMakeScale(0.1, 0.1);
+            [UIView animateWithDuration:0.25 delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+                self.matchAvatarView.transform = CGAffineTransformMakeScale(1, 1);
+            } completion:nil];
         }
     }
 }
